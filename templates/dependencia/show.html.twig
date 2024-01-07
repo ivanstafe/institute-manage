@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    <link href="{{asset('css/show.css')}}" type="text/css" rel="stylesheet">
+{% endblock %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+{{ include('header_adm_dependencia.html.twig') }}
+<div class="show">
+<div class"tabla">
+    
+
+    <table class="table">
+        <tbody>
+        <tr>
+                <th> <h1>Dependencia:</h1></th>
+            
+            </tr>
+            <tr>
+                <th class="texto">Id</th>
+                <td>{{ dependencium.id }}<br></td>
+                
+            </tr>
+            <tr>
+                <th class="texto">Nombre</th>
+                <td>{{ dependencium.nombre }}<br></td>
+            </tr>
+            <tr>
+                <th class="texto">Funcion</th>
+                <td>{{ dependencium.funcion }}<br></td>
+            </tr>
+            <tr>
+                <th class="texto">Ubicacion</th>
+                <td>{{ dependencium.ubicacion }}<br></td>
+            </tr>
+            <tr>
+                <th class="texto">Caracteristicas</th>
+                <td>{{ dependencium.caracteristicas }}<br></td>
+            </tr>
+           
+            
+           
+        </tbody>
+    </table>
+</div>
+
+    
+    <div class="foto"> 
+               
+                <td><img class="imagen" src="{{ asset( 'uploads/imagenes/'~ dependencium.getImagen) }}"/></td>
+</div>
+</div>
+
+
+   
+{% endblock %}

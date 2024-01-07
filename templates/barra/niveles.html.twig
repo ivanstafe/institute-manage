@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link href="{{ asset('css/barra.css') }}" type="text/css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    {% include 'navbar.html.twig' %}
+
+    <div class="container" style="padding: 20px 30px;">
+        <div class="nivel">
+     <h2 style="text-decoration: underline;">Niveles de Nuestra Institución:</h2>
+     <br>
+            <ul>
+                <li>
+                    <h3>Nivel Primario</h3>
+                    <p>
+                        En el nivel primario, los estudiantes desarrollan habilidades esenciales en un ambiente 
+                        educativo estimulante y seguro. Se ofrece una amplia gama de materias y actividades 
+                        para fomentar el crecimiento integral de los estudiantes.
+                    </p>
+                </li>
+                <li>
+                    <h3>Nivel Secundario</h3>
+                    <p>
+                        El nivel secundario en Nova Aetheria se centra en el desarrollo académico y personal de los 
+                        estudiantes. Ofrecemos una variedad de cursos que preparan a los estudiantes para la 
+                        educación superior y para afrontar los desafíos futuros.
+                    </p>
+                </li>
+                <li>
+                    <h3>Nivel Terciario</h3>
+                    <p>
+                        El nivel terciario en Nova Aetheria ofrece diversas carreras de grado y programas especializados.
+                        Algunas de las carreras terciarias disponibles son:
+                    </p>
+                    <ul>
+                        <li>Profesorado en Educación Primaria</li>
+                        <li>Ingeniería en Sistemas</li>
+                        <li>Administración de Empresas</li>
+                        <li>Psicopedagogía</li>
+                        <li>Diseño Gráfico</li>
+                    </ul>
+                </li>
+                <br>
+        
+              
+            </ul>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link href="{{ asset('css/barra.css') }}" type="text/css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    {% include 'navbar.html.twig' %}
+
+    <div class="container" style="padding: 20px 30px;">
+        <h2 style="text-decoration: underline;">Contactos:</h2>
+        <br>
+        <h3>Primario</h3>
+        <p>Contacto: nombre_primario@nova-aetheria.com</p>
+        <p>Dirección: Calle Belgrano 123, Santa Fe, Argentina</p>
+
+        <h3>Secundario</h3>
+        <p>Contacto: nombre_secundario@nova-aetheria.com</p>
+        <p>Dirección: Calle San Martín 456, Santa Fe, Argentina</p>
+
+        <h3>Nivel Terciario</h3>
+        <p>Contacto: nombre_terciario@nova-aetheria.com</p>
+        <p>Dirección: Calle Güemes 789, Santa Fe, Argentina</p>
+
+        <h3>Nivel Universitario</h3>
+        <p>Contacto: nombre_universitario@nova-aetheria.com</p>
+        <p>Dirección: Calle Sarmiento 012, Santa Fe, Argentina</p>
+
+        
+    </div>
+{% endblock %}

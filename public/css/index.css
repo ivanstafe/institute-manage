@@ -1,0 +1,52 @@
+body{
+    background-image: url(../imagenes/rrr.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.tabla{
+    
+    font-size: 18px;
+
+    padding: 5%;
+    text-align: justify;
+
+    margin-bottom: 10%;
+    display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 9rem), 1fr));
+  gap: 2rem;
+}
+h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+ }
+ .imagen{
+
+ width: 140%;
+ height: 120%;
+
+ }
+
+ .custom-button {
+  /* Estilos personalizados para el botón */
+  background-color: #4CAF50; /* Color de fondo */
+  border: none; /* Borde */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno reducido */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px; /* Tamaño de la fuente reducido */
+  margin: 4px 2px;
+  transition-duration: 0.4s; /* Duración de la transición */
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  background-color: #45a049; /* Cambio de color al pasar el mouse */
+  color: white; /* Cambio de color del texto al pasar el mouse */
+}
+

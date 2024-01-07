@@ -1,0 +1,8 @@
+<form method="post" action="{{ path('app_dependencia_delete', {'id': dependencium.id}) }}" onsubmit="return confirm('Estas seguro que deseas borrar item?');">
+    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ dependencium.id) }}">
+    <button class="btn">Borrar</button>
+</form>
+<form method="post" action="{{ path('app_dependencia_edit', {'id': dependencium.id}) }}">
+    <input type="hidden" name="_token" value="{{ csrf_token('edit' ~ dependencium.id) }}">
+    <button class="btn">Editar</button>
+</form>

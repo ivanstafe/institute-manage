@@ -1,0 +1,47 @@
+{# extends 'base.html.twig' #}
+{% block stylesheets %}
+    <link href="{{asset('css/index.css')}}" type="text/css" rel="stylesheet">
+{% endblock %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+<button class="custom-button" onclick="window.location='{{ path('app_busqueda') }}'">Ir al buscador</button>
+
+    <h1>Dependencias:</h1>
+    
+
+
+    <table cellpadding="20%" class="tabla">
+ 
+        
+
+        
+        {% for dependencium in dependencias %}
+            <tr>
+              
+                <td>
+                <h3>Nombre: {{dependencium.nombre}}<h3>
+                <img class="imagen" src="{{ asset( 'uploads/imagenes/'~ dependencium.getImagen) }}"/>
+                    
+                    <a href="{{ path('app_dependencia_show', {'id': dependencium.id}) }}">Mostrar</a>
+                    <a href="{{ path('app_dependencia_edit', {'id': dependencium.id}) }}">Editar</a>
+                    <a href="{{ path('app_dependencia_new') }}">Nueva</a>
+                     <br><br>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">
+                <h3>No hay dependencias guardadas<h3>
+           
+                <a href="{{ path('app_dependencia_new') }}">Nueva</a>
+                </td><td colspan="7">
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    
+
+{% endblock %}

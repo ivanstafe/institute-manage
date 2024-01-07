@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+  {% block stylesheets %}
+    <link href="{{asset('css/login.css')}}" type="text/css" rel="stylesheet">
+  {% endblock %}
+
+{% block body %}
+    {% if error %}
+        <div>Usuario o contraseña incorrecta</div>
+    {% endif %}
+  
+     <div id="contenedor">
+            
+            <div id="contenedorcentrado">
+                <div id="login">
+                    <form id="loginform" action="{{ path('app_login') }}" method="post">
+                        <input placeholder="Ingrese su correo electronico" type="text" id="username" name="_username" value="{{ last_username }}"/>
+               <input placeholder="Ingrese su contraseña" type="password" id="password" name="_password"/>
+                <div class="cont-btn">
+                    <button type="submit">Login</button>
+                     </form> 
+                     
+                     
+                     <form id="" action="{{ path('app_busqueda_user') }}" method="">
+                     <button id="submit" type="submit" value="consultar">Consultar</button>
+                </div>
+            </form>
+                    
+                </div>
+                <div id="derecho">
+                    <div class="titulo">
+          <h4 class="">Conocé al</h4>
+                    </div>
+                    <hr>
+                    <div class="pie-form">
+                                  
+
+        <h3 class="titulo_2" style="color: white;">INSTITUTO <span style="color: rgb(9, 11, 122);">NOVA AETHERIA N°1112</span></h3>
+
+
+                        <hr>
+
+                    {# <a href="https://www.google.com">Salir</a> #}
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+           
+        
+    
+{% endblock %}

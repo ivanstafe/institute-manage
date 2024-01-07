@@ -1,0 +1,8 @@
+<form method="post" action="{{ path('app_aula_delete', {'id': aula.id}) }}" onsubmit="return confirm('Esta seguro que desea borrar este item?');">
+    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ aula.id) }}">
+    <button class="btn btn-danger">Borrar</button>
+</form>
+<form method="post" action="{{ path('app_aula_edit', {'id': aula.id}) }}">
+    <input type="hidden" name="_token" value="{{ csrf_token('edit' ~ aula.id) }}">
+    <button class="btn btn-primary">Editar</button>
+</form>

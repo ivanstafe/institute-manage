@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+    {% include 'navbar.html.twig' %}
+     <div class="form-container" style="margin-left: 50px;"> 
+
+<br>
+    <h1>Editar Dependencia:</h1>
+<br>
+    {{ include('dependencia/_form.html.twig', {'button_label': 'Actualizar'}) }}
+
+        <button class="custom-button2" onclick="window.location='{{ path('app_dependencia_index') }}'">Volver a la lista</button>
+</div>
+  
+{% endblock %}

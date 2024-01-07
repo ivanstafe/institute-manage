@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    <link href="{{asset('css/show.css')}}" type="text/css" rel="stylesheet">
+{% endblock %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+
+{{ include('header_adm_aula.html.twig') }}
+    <div class="show">
+    <div class"tabla">
+    
+ <table class="table">
+        <tbody>
+            <tr>
+                <th> <h1>Aula:</h1></th>
+            
+            </tr>
+
+            <tr>
+                <th class="texto">Id</th>
+                <td>{{ aula.id }}</td>
+            </tr>
+            <tr>
+                <th class="texto">Numero</th>
+                <td>{{ aula.numero }}</td>
+            </tr>
+            <tr>
+                <th class="texto">Carrera</th>
+                <td>{{ aula.carrera }}</td>
+            </tr>
+            <tr>
+                <th class="texto">Equipamiento</th>
+                <td>{{ aula.equipamiento }}</td>
+            </tr>
+            <tr>
+                <th class="texto">Capacidad</th>
+                <td>{{ aula.capacidad }}</td>
+            </tr>
+            <tr>
+                <th class="texto">Caracteristicas</th>
+                <td>{{ aula.caracteristicas }}</td>
+            </tr>
+            <tr>
+                <th class="texto">Ubicacion</th>
+                <td>{{ aula.ubicacion }}</td>
+            </tr>
+   
+        </tbody>
+    </table>
+    </div>
+
+     <div class="foto"> 
+    <img class="imagen" src="{{ asset( 'uploads/imagenes/'~ aula.getImagen) }}"/></td>
+
+   </div>
+</div>
+
+    
+{% endblock %}

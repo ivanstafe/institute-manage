@@ -1,0 +1,109 @@
+body{
+    background-image: url(../imagenes/r.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.contenedor{
+    position: relative;
+    left: 30px;
+    top: 50px;
+    border: solid black 2px;
+    width: 700px;
+    height: 340px;
+    background-image: url(../imagenes/666.jpg);
+}
+.volver{
+  
+   
+    right: 5px;
+    
+}
+.btn{
+   
+    top: 10px;
+    text-decoration: none;
+    font-size: 15px;
+
+   
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white(0, 89, 255, 0.5);
+    border-radius: 5px;
+   
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+.table{
+    font-size: 18px;
+    background-color: rgba(240, 248, 255, 0.452);
+
+    padding: 10%;
+    text-align: justify;
+    margin-left: 2% ;
+    margin-bottom: 10%;
+}
+h3{
+    position: relative;
+    left: 1050px;
+    bottom: 290px;
+    width: 10px;
+    color: white;
+}
+
+.foto{
+
+margin-left: 150px;
+margin-top: 10%;
+}
+
+.texto{
+    color: white;
+    font-weight: 600;
+}
+
+.show{
+   
+    display: flex;
+}
+
+
+/* Resto de estilos CSS que no requieren cambios */
+
+/* Estilos para la imagen con efecto de zoom */
+img {
+    width: 600px;
+    height: 300px;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+
+/* Al pasar el mouse sobre la imagen, aplicará el efecto de zoom */
+img:hover {
+    transform: scale(1.1); /* Aumenta la escala al 110% (efecto de zoom) */
+}
+
+.custom-button2 {
+    /* Estilos personalizados para el botón */
+    background-color: #4c4eaf; /* Color de fondo */
+    border: none; /* Borde */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno reducido */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px; /* Tamaño de la fuente reducido */
+    margin: 4px 2px;
+    transition-duration: 0.4s; /* Duración de la transición */
+    cursor: pointer;
+  }
+  
+  .custom-button2:hover {
+    background-color: #4b45a0; /* Cambio de color al pasar el mouse */
+    color: white; /* Cambio de color del texto al pasar el mouse */
+  }
+
+

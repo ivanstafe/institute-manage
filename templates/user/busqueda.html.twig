@@ -1,0 +1,83 @@
+{% extends 'base.html.twig' %}    
+  {% block stylesheets %}
+    <link href="{{asset('css/busqueda_user.css')}}" type="text/css" rel="stylesheet">
+  {% endblock %}
+
+
+ 
+
+ {% block body %}
+  {% include 'navbar_user.html.twig' %}
+
+  <br><br>
+
+ 
+ <div class="barra">
+ 
+ 
+ <div class="titulo"></div>
+ 
+ </div>
+
+<div id="alin">
+ <div id="contenedor">
+  
+  
+ <h4>Dependencias</h4>
+
+ {#{{ form(form) }}#}
+
+
+<form action="{{ path('dependencia_mostrar_user') }}" method="POST">
+ 
+       <select name="seleccion">
+        {% for dependencia in dependencias %}
+      
+   <option value={{ dependencia.id }}>{{ dependencia.nombre }}</option>
+      
+
+        {% endfor %}
+      </select>  
+    
+      <input type="submit" value="ir"/>
+    </form>
+
+  </div>
+
+
+
+  <div id="contenedor">
+  
+  
+ <h4>Aulas</h4>
+
+
+<form action="{{ path('aula_mostrar_user') }}" method="POST">
+ 
+       <select name="seleccion">
+        {% for aula in aulas %}
+      
+   <option value={{ aula.id }}>{{ aula.carrera }}</option>
+      
+
+        {% endfor %}
+      </select>  
+    
+      <input type="submit" value="ir"/>
+    </form>
+
+  </div>
+
+  </div>
+
+ {#<img class="logo" src="../public/imagenes/RR.png">#}
+
+
+
+{% endblock %}
+
+
+ 
+ 
+ 
+ 

@@ -1,0 +1,56 @@
+body{
+    background-image: url(../imagenes/abc.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.custom-button {
+    /* Estilos personalizados para el botón */
+    background-color: #4CAF50; /* Color de fondo */
+    border: none; /* Borde */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno reducido */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px; /* Tamaño de la fuente reducido */
+    margin: 4px 2px;
+    transition-duration: 0.4s; /* Duración de la transición */
+    cursor: pointer;
+  }
+  
+  .custom-button:hover {
+    background-color: #45a049; /* Cambio de color al pasar el mouse */
+    color: white; /* Cambio de color del texto al pasar el mouse */
+  }
+  .custom-button2 {
+    /* Estilos personalizados para el botón */
+    background-color: #4c4eaf; /* Color de fondo */
+    border: none; /* Borde */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno reducido */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px; /* Tamaño de la fuente reducido */
+    margin: 4px 2px;
+    transition-duration: 0.4s; /* Duración de la transición */
+    cursor: pointer;
+  }
+  
+  .custom-button2:hover {
+    background-color: #4b45a0; /* Cambio de color al pasar el mouse */
+    color: white; /* Cambio de color del texto al pasar el mouse */
+  }
+
+
+
+
+
+/* Estilos para el contenedor del formulario */
+.form-container {
+  margin-left: 50px; /* Margen izquierdo */
+  margin-right: 550px; /* Margen derecho */
+
+}

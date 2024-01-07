@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link href="{{ asset('css/barra.css') }}" type="text/css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    {% include 'navbar.html.twig' %}
+
+    <div class="container" style="padding: 20px 30px;">
+        <p>Bienvenido a <strong>Nova Aetheria</strong>, un lugar donde la curiosidad se convierte en conocimiento y la imaginación se une con la excelencia académica. En Nova Aetheria, estamos comprometidos a cultivar mentes brillantes y creativas que estén listas para abrazar los desafíos del futuro.</p>
+        
+        <p>Nuestra institución se destaca por ofrecer un entorno educativo innovador que combina rigurosidad académica con enfoques pedagógicos modernos. Valoramos la individualidad de cada estudiante y les brindamos las herramientas y el apoyo necesarios para que alcancen su máximo potencial.</p>
+        
+        <p>En Nova Aetheria, fomentamos el pensamiento crítico, la colaboración y el respeto mutuo. Nuestros educadores altamente calificados están dedicados a inspirar, guiar y nutrir a nuestros estudiantes a medida que exploran nuevas ideas y descubren su propio camino hacia el éxito.</p>
+        
+        <p>Nos enorgullecemos de nuestra comunidad diversa y acogedora, donde se promueve el aprendizaje a través de experiencias enriquecedoras dentro y fuera del aula. Desde las artes hasta las ciencias, desde la tecnología hasta las humanidades, ofrecemos un amplio abanico de oportunidades para que cada estudiante explore sus intereses y talentos.</p>
+        
+        <p>En Nova Aetheria, no solo formamos mentes brillantes, sino también corazones compasivos. Nuestro compromiso con la ética, la responsabilidad social y el servicio a la comunidad impulsa a nuestros estudiantes a convertirse en ciudadanos globales comprometidos con hacer del mundo un lugar mejor.</p>
+        
+        <p><strong>Únete a nosotros en Nova Aetheria, donde el aprendizaje es una aventura emocionante y el crecimiento es infinito.</strong></p>
+    </div>
+{% endblock %}
